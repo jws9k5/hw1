@@ -1,3 +1,6 @@
+//Author: Jonny Stadter
+//Date: 9/22/2024
+//handles moving the camera to be centered on the player.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

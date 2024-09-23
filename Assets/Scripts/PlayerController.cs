@@ -1,3 +1,7 @@
+//Author: Jonny Stadter
+//Date: 9/22/2024
+//Handles the movement, speed, and size of the player character. Also handles win/loss conditions, the timer, 
+//placement and activation of the powerup, and activation of the reset button.
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,11 +49,12 @@ public class PlayerController : MonoBehaviour
         x = UnityEngine.Random.Range(-10.0f, 10.0f);
         y = UnityEngine.Random.Range(-10.0f, 10.0f);
 
-        powerPos = new Vector3(x, y, 0);
+        powerPos = new Vector3(x, y, 0); //position of the power up will be random each reset.
 
         pickUp.transform.position = powerPos;
 
         rb2d = GetComponent<Rigidbody2D>();
+
         timeElapsed = 0.0f;
 
         speed = 10;
@@ -74,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if ((isLoss == false) && (isWin == false)) 
+        if ((isLoss == false) && (isWin == false))  //if the game is not over, increment the timer
         {
             timeElapsed += Time.deltaTime;
             seconds = (int)timeElapsed % 60;
@@ -83,14 +88,14 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (currentTime == 45)
+        if ((currentTime == 45) && (isLoss == false)) //powerup activates once 15 seconds have passed.
         {
             pickUp.gameObject.SetActive(true);
             
 
         }
 
-        if (currentTime == endPower)
+        if (currentTime == endPower) //ends the power up after 10 seconds.
         {
             speed = 10;
 
@@ -98,9 +103,10 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if ((timeElapsed >= 60.0f) && (isLoss == false)) 
+        if ((timeElapsed >= 60.0f) && (isLoss == false)) //Victory after 60 seconds and remaining untouched
         {
             isWin = true;
+            timer.text = "";
             winText.text = "You Win!";
             restartButton.gameObject.SetActive(true);
         }
@@ -112,8 +118,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Obstacle") && (isWin == false))
-        {
+        if (col.gameObject.CompareTag("Obstacle") && (isWin == false)) //Will lose the game on collision with the player,
+        {                                                              // and the game has not been won. 
             isLoss = true;
 
             timer.text = "";
@@ -126,7 +132,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("PickUp")) //Powerup doubles the speed and halves the size of the player.
         {
             other.gameObject.SetActive(false);
 
@@ -134,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
             player.transform.localScale = powerScale;
 
-            endPower = currentTime - 10;
+            endPower = currentTime - 10; //powerup will end after 10 seconds.
 
         }
 

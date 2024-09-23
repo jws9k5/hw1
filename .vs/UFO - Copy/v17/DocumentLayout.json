@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "F:\\Unity Projects\\UFO - Copy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|F:\\Unity Projects\\UFO - Copy\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|f:\\unity projects\\ufo - copy\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|f:\\unity projects\\ufo - copy\\assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|f:\\unity projects\\ufo - copy\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|F:\\Unity Projects\\UFO - Copy\\assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|f:\\unity projects\\ufo - copy\\assets\\scripts\\rotater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB3371C4-6105-77C2-7194-A27081B1CEAB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rotater.cs",
+              "DocumentMoniker": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\Rotater.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rotater.cs",
+              "ToolTip": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\Rotater.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rotater.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T04:17:43.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CameraController.cs",
+              "DocumentMoniker": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\CameraController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
+              "ToolTip": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\CameraController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T04:17:39.535Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,20 +62,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAgwDoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T03:16:30.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ObstacleController.cs",
               "DocumentMoniker": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\ObstacleController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObstacleController.cs",
               "ToolTip": "F:\\Unity Projects\\UFO - Copy\\Assets\\Scripts\\ObstacleController.cs",
               "RelativeToolTip": "Assets\\Scripts\\ObstacleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T03:15:11.76Z",
               "EditorCaption": ""

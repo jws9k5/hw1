@@ -1,3 +1,6 @@
+//Author: Jonny Stadter
+//Date: 9/22/2024
+//Rotates the Obstacles
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
